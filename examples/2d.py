@@ -1,6 +1,6 @@
 import math
 
-from engine2d import Game, RenderEngine, Painter, Object
+from fr.engine2d import Game, RenderEngine, Painter, Object
 
 
 if __name__ == "__main__":

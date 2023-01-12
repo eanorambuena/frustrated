@@ -1,7 +1,6 @@
-from controls import dual_control, quad_control
-from engine2d import RenderEngine, Painter
-from engine3d import Camera3d, Object3d
-
+from fr.controls import dual_control, quad_control
+from fr.engine2d import RenderEngine, Painter
+from fr.engine3d import Camera3d, Object3d
 
 if __name__ == "__main__":
     speed = 0.1
@@ -11,7 +10,7 @@ if __name__ == "__main__":
     dd = 0
     dr = 0
 
-    path = "cube.eobj"
+    path = "cubo.eobj"
     camera = Camera3d()
     engine = RenderEngine(300, 120)
     painter = Painter(engine)
@@ -41,6 +40,4 @@ if __name__ == "__main__":
                 painter.draw_line((int(vertex_1[0]), int(vertex_1[1])), (int(vertex_2[0]), int(vertex_2[1])))
         
         painter.draw(*model_positions)
-        for char in _01.chars:
-            painter.draw(*char)
         engine.show()

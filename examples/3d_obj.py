@@ -1,9 +1,9 @@
 import numpy as np
 import keyboard
 
-from controls import dual_control, quad_control
-from engine2d import RenderEngine, Painter
-from engine3d import Camera3d, Object3d
+from fr.controls import dual_control, quad_control
+from fr.engine2d import RenderEngine, Painter
+from fr.engine3d import Camera3d, Object3d
 
 
 if __name__ == "__main__":

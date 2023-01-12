@@ -53,7 +53,7 @@ class Painter():
         lerp = lambda a, b, t: a + (b - a) * t
         x1, y1 = point_1
         x2, y2 = point_2
-        iterations = max(abs(x2 - x1), abs(y2 - y1)) * self.density
+        iterations = int(max(abs(x2 - x1), abs(y2 - y1)) * self.density)
         for t in range(iterations):
             t /= iterations
             x = lerp(x1, x2, t)
